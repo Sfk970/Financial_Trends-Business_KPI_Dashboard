@@ -47,7 +47,7 @@ These SQL queries helped explore and understand the financial dataset before vis
 
 2. **Top 5 Companies by Average ROE**
    - Identified companies with the highest average Return on Equity.
-   select company, round(avg(ROE),2) as avg_ROE 
+   - select company, round(avg(ROE),2) as avg_ROE 
    from financial_data 
    group by company 
    order by avg_ROE desc 
@@ -55,22 +55,21 @@ These SQL queries helped explore and understand the financial dataset before vis
 
 3. **Companies with High ROE and Low Debt-Equity**
    - Filtered companies that had high ROE (above average) and a low debt-equity ratio.
-     select company, category, year, ROE, DebtEquityRatio 
+   - select company, category, year, ROE, DebtEquityRatio 
      from financial_data 
      where ROE>20 AND DebtEquityRatio<1 
      order by ROE desc;
 
 4. **Category-Wise Average Net Profit Margin**
    - Displayed average profitability across different industry categories.
-     select category, round(avg(NetProfitMargin),2) as avg_Netprofit_margin 
+   - select category, round(avg(NetProfitMargin),2) as avg_Netprofit_margin 
      from financial_data 
      group by category
      order by avg_Netprofit_margin desc 
 
 5. **Top 5 Companies by EBITDA Margin**
    - Ranked companies with the most efficient operations by EBITDA margin.
-     SELECT 
-    company,
+   - SELECT company,
     ROUND(AVG(ebitda / NULLIF(revenue, 0) * 100), 2) AS avg_ebitda_margin
     FROM financial_data
     GROUP BY company
@@ -147,13 +146,3 @@ Using the cleaned dataset and SQL insights, a **2-page interactive dashboard** w
 ## 💼 Resume & Portfolio Highlight
 
 > Built a 2-page Power BI dashboard using 15 years of company financial data. Delivered executive-level insights on profitability, efficiency, and capital structure. Performed SQL-based exploration and used clean DAX logic to build stakeholder-ready visuals.
-
----
-
-## 📁 File Structure
-
-```bash
-├── Financial_Trends_BI_Dashboard.pbix   # Power BI file
-├── finance_dataset.csv                  # Dataset
-├── README.md                            # Documentation
-├── /images                              # Screenshots
