@@ -34,7 +34,7 @@ These SQL queries helped explore and understand the financial dataset before vis
 
 1. **YoY Revenue Growth per Company**
    - Query calculated year-wise revenue growth (%) for each company.
-     SELECT company, year, revenue,
+   - SELECT company, year, revenue,
     LAG(revenue) OVER (PARTITION BY company ORDER BY year) AS previous_year_revenue,
     ROUND(
         (revenue - LAG(revenue) OVER (PARTITION BY company ORDER BY year)) 
