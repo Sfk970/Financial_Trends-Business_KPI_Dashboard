@@ -6,7 +6,7 @@ This is a financial data analysis project based on data from major companies acr
 
 ## 📌 Objective
 
-To analyze long-term company financial data and deliver actionable business insights on revenue trends, profitability, efficiency, and capital structure using SQL and Power BI — without Python.
+To analyze long-term company financial data and deliver actionable business insights on revenue trends, profitability, efficiency, and capital structure using SQL and Power BI.
 
 ---
 
