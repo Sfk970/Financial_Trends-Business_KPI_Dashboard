@@ -139,10 +139,4 @@ Using the cleaned dataset and SQL insights, a **2-page interactive dashboard** w
 5. **Dashboard Design**:
    - 2 Pages: Company View & Category View
    - Business-centric visual storytelling
-   - Exported to PDF and PBIX
-
----
-
-## 💼 Resume & Portfolio Highlight
-
-> Built a 2-page Power BI dashboard using 15 years of company financial data. Delivered executive-level insights on profitability, efficiency, and capital structure. Performed SQL-based exploration and used clean DAX logic to build stakeholder-ready visuals.
+   - Exported to PDF and PBIX.
